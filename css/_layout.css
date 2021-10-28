@@ -1,0 +1,46 @@
+html, 
+body{
+    height: 100%;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--background-colour);
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: gray;
+    font-size: 0.7em;
+    padding: 1rem 3rem;
+}
+
+footer > div:last-child{
+    margin: 0.5rem;
+}
+
+@media(min-width: 576px){
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--light-beige);
+    }
+
+    footer > div:last-child{
+        margin: 0px;
+    }
+}
+
+.wrapper{
+    flex: 1 0 auto;
+}
+
+.container{
+    margin-bottom: 100px;
+}
