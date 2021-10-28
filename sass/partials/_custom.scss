@@ -1,0 +1,15 @@
+$tablet-width: 576px;
+$navbar-light-active-color: #C32C72 ;
+
+$colours: (
+    primary: #C32C72,
+    secondary: #6A6A6A,
+    gray: #8D8D8D,
+    background-colour: #E5E5E5,
+    ligher-gray: #E2E2E2,
+    light-beige: #F4F3EE,
+);
+
+@function getColour($colour){
+    @return map-get($colours, $colour);
+}

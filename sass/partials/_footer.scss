@@ -1,0 +1,26 @@
+/** @format */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: getColour(gray);
+  font-size: 0.7em;
+  padding: 1rem 3rem;
+
+  > div:last-child {
+    margin: 0.5rem;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: getColour(light-beige);
+
+    > div:last-child {
+      margin: 0px;
+    }
+  }
+}
